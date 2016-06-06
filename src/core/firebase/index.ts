@@ -8,7 +8,7 @@ import {
 
 export const FIREBASE_APP_PROVIDERS: any[] = [
   FIREBASE_PROVIDERS,
-  defaultFirebase('https://ng2-todo-app.firebaseio.com'),
+  defaultFirebase('https://dazzling-heat-8722.firebaseio.com'),
   firebaseAuthConfig({
     method: AuthMethods.Popup
   })
