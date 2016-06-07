@@ -24,7 +24,7 @@
     "lint:js": "eslint -c .eslintrc.yml *.js ./server",
     "lint:ts": "tslint './src/**/*.ts'",
     "postinstall": "npm run typings",
-    "prebuild": "npm-run-all clean lint:ts test",
+    "prebuild": "npm-run-all clean lint:ts",
     "server": "cross-env NODE_ENV=development nodemon -w 'server/**/*.*' ./server/main.js",
     "start": "npm run dev",
     "test": "cross-env NODE_ENV=test karma start --single-run",

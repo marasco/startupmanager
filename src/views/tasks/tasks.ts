@@ -15,6 +15,7 @@ import { TaskList } from './task-list/task-list';
   template: `
     <div class="g-row">
       <div class="g-col">
+      <h2>Task list for my startup</h2>
         <task-form (createTask)="taskService.createTask($event)"></task-form>
       </div>
     
