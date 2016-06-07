@@ -11,7 +11,7 @@ import { AuthRouteHelper, AuthService } from 'src/core/auth';
   template: `
     <div class="g-row sign-in">
       <div class="g-col">
-        <h1 class="sign-in__logo">My Startup</h1>
+        <h1 class="sign-in__logo logo-animation">My Startup</h1>
         <h2 class="sign-in__heading">Sign in</h2>
         <button class="sign-in__button" (click)="signInWithGoogle()" type="button">Google</button>
         <button class="sign-in__button" (click)="signInWithTwitter()" type="button">Twitter</button>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { Route, RouteConfig, RouterOutlet } from '@angular/router-deprecated';
 import { AuthService } from 'src/core/auth';
 import { SignIn } from 'src/views/sign-in';
@@ -33,6 +33,9 @@ import { AppHeader } from './app-header';
 
 export class App {
   constructor(private auth: AuthService) {}
+  ngAfterViewInit() {
+    document.getElementById('loading').style.display = 'none';
+  }
 
   signOut(): void {
     this.auth.signOut();
