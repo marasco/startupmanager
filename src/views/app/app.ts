@@ -31,8 +31,9 @@ import { AppHeader } from './app-header';
   `
 })
 
-export class App {
+export class App implements AfterViewInit {
   constructor(private auth: AuthService) {}
+  
   ngAfterViewInit() {
     document.getElementById('loading').style.display = 'none';
   }
