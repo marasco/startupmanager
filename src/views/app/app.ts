@@ -33,11 +33,9 @@ import { AppHeader } from './app-header';
 
 export class App implements AfterViewInit {
   constructor(private auth: AuthService) {}
-  
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     document.getElementById('loading').style.display = 'none';
   }
-
   signOut(): void {
     this.auth.signOut();
     window.location.replace('/');
